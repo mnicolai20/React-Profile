@@ -1,13 +1,11 @@
 import React from "react";
 import "./style.css";
-import dailyPlan from "../pics/noteTaker.PNG";
-import passwordGen from "../pics/passwordGen.PNG";
 
-function projectCard() {
+function projectCard(props) {
     return(
         <div>
-            <img src={dailyPlan} alt="planner" className="planner"/>
-            <img src={passwordGen} alt="password" className="planner"/>
+            <img src={"images/"+props.picture+".PNG"} alt={props.caption} />
+            <p><a href={props.link}>{props.caption}</a></p>
         </div>
     )
 }

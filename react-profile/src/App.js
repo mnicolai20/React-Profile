@@ -11,7 +11,7 @@ function App() {
     <Router>
       <div>
         <NavBar />
-        <About exact path="/" component={About} />
+        <Route exact path="/" component={About} />
         <Route exact path="/portfolio" component={Portfolio} />
         {/* catch all route route remove Path */}
       </div>

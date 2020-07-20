@@ -1,20 +1,22 @@
-import React from "react";
+import React, { Component } from "react";
 // import projectCard from "../card/index";
 // import 'bootstrap/dist/css/bootstrap.min.css';
-import dailyPlan from "../pics/DailyPlanner.PNG";
-import passwordGen from "../pics/PasswordGen.PNG";
-import glutton from "../pics/Capture.PNG";
-import noteTaker from "../pics/noteTaker.PNG";
-import quizGen from "../pics/quizGen.PNG";
-import webpageGen from "../pics/webpageGen.PNG";
-import "../card/style.css"
+import Card from "../card/index";
+import projects from "../../projects.json";
 
-
-
-function Portfolio() {
+class Portfolio extends Component {
+  state={projects};
+  render(){
   return (
     <div>
       <h1>Projects</h1>
+      {this.state.projects.map(project => (
+        <Card
+        caption={project.title}
+        picture={project.picture}
+        location={project.link}
+        />
+      ))}
       <img src={dailyPlan} className="planner" alt="planner" />
         <p className="plannerTitle">Daily Planner</p>
       <img src={passwordGen} className="generator" alt="password" />
@@ -29,6 +31,7 @@ function Portfolio() {
         <p className="webpageTitle">Webpage Generator</p>
     </div>
   );
+  }
 }
 
 export default Portfolio;
