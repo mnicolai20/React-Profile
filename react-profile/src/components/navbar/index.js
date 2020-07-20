@@ -6,14 +6,12 @@ function Navbar() {
   return(
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div>
- 
            <Link className="nav-item" to="/">
                About
            </Link>
-
-              <Link className="nav-item" to="/portfolio">
-                  Portfolio
-              </Link>
+           <Link className="nav-item" to="/portfolio">
+               Portfolio
+           </Link>
 
       </div>
       </nav>

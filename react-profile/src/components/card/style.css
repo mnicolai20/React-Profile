@@ -1,3 +1,9 @@
 .planner{
-    border-radius: 5%;
+    height: 70px;
+    width: 300px;
+}
+
+.generator{
+    height: 115px;
+    width: 250px;
 }
