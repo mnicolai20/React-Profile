@@ -17,18 +17,6 @@ class Portfolio extends Component {
         location={project.link}
         />
       ))}
-      <img src={dailyPlan} className="planner" alt="planner" />
-        <p className="plannerTitle">Daily Planner</p>
-      <img src={passwordGen} className="generator" alt="password" />
-        <p className="passwordTitle">Password Generator</p>
-      <img src={glutton} className="gluttons" alt="GA" />
-        <p className="gluttonsTitle">Gluttons and Alcoholics (Recipes and Cocktail Pairing</p>
-      <img src={noteTaker} className="notes" alt="noteTaker" />
-        <p className="notesTitle">Note Taker</p>
-      <img src={quizGen} className="quiz" alt="quizGen" />
-        <p className="quizTitle">Quiz Generator</p>
-      <img src={webpageGen} className="pageGen" alt="webpageGen" />
-        <p className="webpageTitle">Webpage Generator</p>
     </div>
   );
   }
