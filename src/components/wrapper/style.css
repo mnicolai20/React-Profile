@@ -1,4 +1,4 @@
-/* .fullPage{
+.wrapper{
     background-image: url(https://www.computersciencedegreehub.com/wp-content/uploads/2016/02/what-is-coding-1024x683.jpg);
     height: 100%;
     margin: 0;
@@ -6,16 +6,4 @@
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
-} */
-
-.context{
-    margin: 3%;
-    background-color: hsla(195, 53%, 79%, 0.898);
-    border: solid;
-    border-color: black;
-}
-
-.aboutTitle{
-    text-align: center;
-    color: white;
 }
