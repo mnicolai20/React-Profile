@@ -1,7 +1,8 @@
 .aboutTitle{
     text-align: center;
     text-decoration-color: red;
-    
+    text-decoration: underline;
+    color: white
 }
 
 .paragraph{
